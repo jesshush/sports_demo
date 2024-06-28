@@ -17,7 +17,7 @@ body {
 }
 
 .nav_container {
-  background: rgb(90, 18, 18);
+  background: rgb(91, 23, 23);
   }
 
 .nav_container .header {
@@ -91,7 +91,7 @@ body {
   }
 
   .featured {
-    background: linear-gradient(rgb(83, 5, 5), rgb(105, 45, 6));
+    background: linear-gradient(rgb(83, 5, 5), rgb(104, 45, 6));
   }
   
   .featured .left .inner-transition2 {
@@ -280,7 +280,7 @@ body {
     }
   }
 .snow_hero {
-  background-image: linear-gradient( #cb9d6c , #c55e10 );
+  background-image: linear-gradient( #c55e10, #cb9d6c  );
   min-height: 1000vh;
   min-height: 120rem;
   position: relative;
@@ -423,12 +423,5 @@ body {
     padding: 10px;
     
     width: 50%;
-     /* }
-   .contact {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }  */
-  /* div.cot>p{
-    height: 100%;
-  } */
-/*# sourceMappingURL=main.css.map */
+     }
+   

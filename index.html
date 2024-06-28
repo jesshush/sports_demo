@@ -9,7 +9,112 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/e9cb417b82.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+ <style>
+       
+        .contact_container {
+            display: flex;
+            align-items: center;
+        }
+        .user_input {
+            margin-left: 200px;
+            margin-top: 5px;
+        }
+        .user_input textarea {
+            width: 600px;
+            height: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-left: 250px;
+            margin-top:-300px
+        }
+        .contact_info {
+            margin-top: 20px;
+        }body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        .sports-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        
+        .sk:hover lottie-player {
+            animation: moveLottie 10s linear infinite; /* Apply animation only on hover */
+        }
+        h2 {
+            color: rgb(0, 0, 0);
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+        }
+        img {
+            margin: 0 auto;
+            display: block;
+            width: 10px;
+            height:10px
+        }
+        lottie-player {
+            position: relative;
+            top: 10;
+            right: 10;
+            animation: none; /* Initially no animation */
+        }
+        .schedule-box {
+            border: 2px solid #000;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            max-width: 600px;
+            position: relative;
+            z-index: 1;
+        }
+        .schedule-box h2, .schedule-box h3 {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        .schedule-box p {
+            margin: 5px 0;
+        }
+        .moving-lottie {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            z-index: 0;
+            animation: moveLottie 10s linear infinite;
+        }
+        @keyframes moveLottie {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        .schedule-card {
+            display: inline-block; /* Allow it to adjust width based on content */
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-top: 20px; /* Adjust margin as needed */
+            max-width: calc(100% - 20px); /* Set maximum width based on container width */
+            vertical-align: top; /* Aligns with top of container */
+        }
+        
+        
+        
+        .schedule-card p {
+            margin: 8px 0;
+            font-weight: normal; /* Ensure normal font weight */
+        }
+        .coach-info p {
+            font-weight: normal; /* Ensures text is not bold */
+        }
+        
+    </style>
 
 </head>
 
@@ -115,96 +220,166 @@
 <h6 id="sports played" class="page text-typing"><p>sports played</p></div></h6>
 
     
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 <div class="sports played">
-        <img src="/images/webdev.png" alt="">
-</div>
-<div class="sk">
-<h2><p>Athletics</h2></p>
-        <h3> <div class="sports Athletics"></div></h3>
-        <br>Monday, Wednesday,Thursday, Saturday- Training(ground)- 2 hrs,<br>
-        <br>Tuesday, Friday- Weight Training(ground)- 3 hrs, <br>     
-        <br> Sunday- Rest<br>
+ <img src="/images/webdev.png" alt="">
 </div>
 
-</div>
 <div class="sk">
-<h2><p>Swimming</h2></p>
-        <h3> <div class="sports Swimming"></div></h3>
-        <br>Monday, Wednesday,Thursday, Saturday- Training(pool)- 2 hrs,<br>
-        <br>Tuesday, Friday-Weight Training(ground)- 2 hrs,<br>
-        <br>Sunday- Rest<br>
+    <div class="sport-details">
+        <h2>Athletics</h2>
+        <div class="sports Athletics"></div>
+        <div class="coach-info">
+            <p><strong>Coach:</strong> Usain Bolt</p>
+            <p><strong>Contact:</strong> 937294732</p>
+        </div>
+        <div class="schedule-card">
+            <h4>Training Schedule</h4>
+            <p><strong>Monday, Wednesday, Thursday, Saturday:</strong> Training (ground) - 2 hrs</p>
+            <p><strong>Tuesday, Friday:</strong> Weight Training (ground) - 3 hrs</p>
+            <p><strong>Sunday:</strong> Rest</p>
+        </div>
+    </div>
+    <lottie-player class="right" src="https://lottie.host/2df608c3-fb01-42a1-acd5-bb2b6ad707ae/7eXuAO0bZ9.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
 </div>
 
-</div>
 <div class="sk">
-<h2><p>Football</h2></p>
-        <h3> <div class="sports "></div></h3>
-        <br> Monday, Wednesday,Thursday, Saturday- Training(turf)- 2 hrs,<br>
-        <br> Tuesday, Friday- Training(gym)- 2 hrs,<br>
-        <br> Sunday- Rest<br>
+    <div class="sport-details">
+        <h2>Swimming</h2>
+        <div class="sports Swimming"></div>
+        <div class="coach-info">
+            <p><strong>Coach:</strong> M Phelps</p>
+            <p><strong>Contact:</strong> 944894732</p>
+        </div>
+        <div class="schedule-card">
+            <p><strong>Monday, Wednesday, Thursday, Saturday:</strong> Training (pool) - 2 hrs</p>
+            <p><strong>Tuesday, Friday:</strong> Weight Training (ground) - 2 hrs</p>
+            <p><strong>Sunday:</strong> Rest</p>
+        </div>
+    </div>
+    <lottie-player class="right" src="https://lottie.host/0e876073-c8b2-45b9-8583-62ef2b7d2feb/07akqk6Y35.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
 </div>
 
-</div>
 <div class="sk">
-<h2><p>Badminton</h2></p>
-    <h3> <div class="sports Swimming"></div></h3>
-        <br> Monday, Tuesday, Friday, Saturday- Training(court)- 2 hrs,<br>
-        <br>Wednesday, Thursday- Training(ground)- 2 hrs,<br>
-        <br>Sunday- Rest<br>
+    <div class="sport-details">
+        <h2>Football</h2>
+        <div class="sports Football"></div>
+        <div class="coach-info">
+            <p><strong>Coach:</strong> James Rodriguez</p>
+            <p><strong>Contact:</strong> 977202932</p>
+        </div>
+        <div class="schedule-card">
+            <p><strong>Monday, Wednesday, Thursday, Saturday:</strong> Training (turf) - 2 hrs</p>
+            <p><strong>Tuesday, Friday:</strong> Training (gym) - 2 hrs</p>
+            <p><strong>Sunday:</strong> Rest</p>
+        </div>
+    </div>
+    <lottie-player src="https://lottie.host/e73e78c6-07f8-4fed-bc2f-e0e6cc2f6fce/M7rHpiRiDs.json"  background="transparent"  speed="1"  style="width: 350px; height: 250px;"  loop autoplay></lottie-player>
 </div>
 
-</div>
 <div class="sk">
-<h2><p>Boxing</h2></p>
-    <h3> <div class="sports Swimming"></div></h3>
-        <br> Monday, Wednesday,Thursday - Training(ring)- 2 hrs,<br>
-        <br>Tuesday, Friday, Saturday- Training(ground)- 2 hrs,<br>
-        <br>Sunday- Rest<br>
+    <div class="sport-details">
+        <h2>Badminton</h2>
+        <div class="sports Badminton"></div>
+        <div class="coach-info">
+            <p><strong>Coach:</strong> PV Sindu</p>
+            <p><strong>Contact:</strong> 937920432</p>
+        </div>
+        <div class="schedule-card">
+            <p><strong>Monday, Tuesday, Friday, Saturday:</strong> Training (court) - 2 hrs</p>
+            <p><strong>Wednesday, Thursday:</strong> Training (ground) - 2 hrs</p>
+            <p><strong>Sunday:</strong> Rest</p>
+        </div>
+    </div>
+    <lottie-player src="https://lottie.host/0b000461-578c-46ae-8c84-e2a5e3df000c/fljmH4XDEB.json"  background="transparent"  speed="1"  style="width: 350px; height: 250px;"  loop autoplay></lottie-player>
 </div>
 
-</div>
 <div class="sk">
-<h2><p>Cricket</h2></p>
-    <h3> <div class="sports Swimming"></div></h3>
-        <br> Monday, Wednesday,Thursday,Friday, Saturday- Training(ground)- 2 hrs,<br>
-        <br>Tuesday- Training(ground)- 2 hrs,<br>
-        <br>Sunday- Rest<br>
+    <div class="sport-details">
+        <h2>Boxing</h2>
+        <div class="sports Boxing"></div>
+        <div class="coach-info">
+            <p><strong>Coach:</strong> M. Ali</p>
+            <p><strong>Contact:</strong> 837294732</p>
+        </div>
+        <div class="schedule-card">
+            <p><strong>Monday, Wednesday, Thursday:</strong> Training (ring) - 2 hrs</p>
+            <p><strong>Tuesday, Friday, Saturday:</strong> Training (ground) - 2 hrs</p>
+            <p><strong>Sunday:</strong> Rest</p>
+        </div>
+    </div>
+    <lottie-player src="https://lottie.host/d7f92599-039e-4c85-910d-7346aaab8bc1/EKFhJ4XCiW.json"  background="transparent"  speed=".5"  style="width: 350px; height: 250px;"  loop autoplay></lottie-player>
 </div>
 
-</div>
 <div class="sk">
-<h2><p>Chess</h2></p>
-    <h3> <div class="sports Swimming"></div></h3>
-        <br> Monday, Wednesday,Thursday, Saturday- Training(in pool)- 2 hrs,<br>
-        <br>Sunday- Rest<br>
+    <div class="sport-details">
+        <h2>Cricket</h2>
+        <div class="sports Cricket"></div>
+        <div class="coach-info">
+            <p><strong>Coach:</strong> Daniel Craig</p>
+            <p><strong>Contact:</strong> 923893732</p>
+        </div>
+        <div class="schedule-card">
+            <p><strong>Monday, Wednesday, Thursday, Friday, Saturday:</strong> Training (ground) - 2 hrs</p>
+            <p><strong>Tuesday:</strong> Training (ground) - 2 hrs</p>
+            <p><strong>Sunday:</strong> Rest</p>
+        </div>
+    </div>
+    <lottie-player src="https://lottie.host/46685655-1072-4a60-857b-4f56c6e6acf8/EprvtcSodn.json"  background="transparent"  speed=".5"  style="width: 350px; height: 250px;"  loop autoplay></lottie-player>
 </div>
 
-</div>
 <div class="sk">
-<h2><p>Lawn Tennis</h2></p>
-    <h3> <div class="sports Swimming"></div></h3>
-        <br> Monday, Wednesday,Thursday,Friday, Saturday- Training(ground)- 2 hrs,<br>
-        <br>Tuesday- Training(ground)- 2 hrs,<br>
-        <br>Sunday- Rest<br>
+    <div class="sport-details">
+        <h2>Chess</h2>
+        <div class="sports Chess"></div>
+        <div class="coach-info">
+            <p><strong>Coach:</strong> Magnus Carlson</p>
+            <p><strong>Contact:</strong> 737294732</p>
+        </div>
+        <div class="schedule-card">
+            <p><strong>Monday, Wednesday, Thursday, Saturday:</strong> Training (in pool) - 2 hrs</p>
+            <p><strong>Sunday:</strong> Rest</p>
+        </div>
+    </div>
+    <lottie-player src="https://lottie.host/2a3a6aff-3af0-437d-ae50-0e1887ce1673/ubO2e5WkN6.json"  background="transparent"  speed=".5"  style="width: 350px; height: 250px;"  loop autoplay></lottie-player>
 </div>
 
-</div>
 <div class="sk">
-<h2><p>Squash</h2></p>
-    <h3> <div class="sports Swimming"></div></h3>
-        <br> Monday, Wednesday,Thursday,Friday, Saturday- Training(ground)- 2 hrs,<br>
-        <br>Tuesday- Training(ground)- 2 hrs,<br>
-        <br>Sunday- Rest<br>
+    <div class="sport-details">
+        <h2>Lawn Tennis</h2>
+        <div class="sports Lawn-Tennis"></div>
+        <div class="coach-info">
+            <p><strong>Coach:</strong> Rafael Nadal</p>
+            <p><strong>Contact:</strong> 803929322</p>
+        </div>
+        <div class="schedule-card">
+            <p><strong>Monday, Wednesday, Thursday, Friday, Saturday:</strong> Training (ground) - 2 hrs</p>
+            <p><strong>Tuesday:</strong> Training (ground) - 2 hrs</p>
+            <p><strong>Sunday:</strong> Rest</p>
+        </div>
+    </div>
+    <lottie-player src="https://lottie.host/11d9fa4c-75f7-46b3-8d24-42bf5257b5d9/9Zx41zGlpf.json"  background="transparent"  speed=".5"  style="width: 350px; height: 250px;"  loop autoplay></lottie-player>
 </div>
 
-</div>
-<div class="sk">
-<h2><p>Table Tennis</h2></p>
-    <h3> <div class="sports Swimming"></div></h3>
-        <br> Monday, Wednesday,Thursday,Friday, Saturday- Training(ground)- 2 hrs,<br>
-        <br>Tuesday- Training(ground)- 2 hrs,<br>
-        <br>Sunday- Rest<br>
-</div>
+    <div class="sk">
+        <div class="sport-details">
+            <h2>Table Tennis</h2>
+            <div class="sports Table-Tennis"></div>
+            <div class="coach-info">
+                <p><strong>Coach:</strong> Maria Lane</p>
+                <p><strong>Contact:</strong> 937294732</p>
+            </div>
+            <div class="schedule-card">
+                <h4>Training Schedule</h4>
+                <p><strong>Monday, Wednesday, Thursday, Friday, Saturday:</strong> Training (ground) - 2 hrs</p>
+                <p><strong>Tuesday:</strong> Training (ground) - 2 hrs</p>
+                <p><strong>Sunday:</strong> Rest</p>
+            </div>
+        </div>
+        <lottie-player src="https://lottie.host/067b5e81-82af-4395-894b-6d9625e54526/WEQwV40jPu.json"  background="transparent"  speed=".5"  style="width: 350px; height: 250px;"  loop autoplay></lottie-player>
+    </div>
+    
 
 
 <!-- </div> 
@@ -317,22 +492,33 @@
         <p >contact()</p>
     </div>
     <div class="condetails">
-        <div class="contact_animation">
-            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_u25cckyh.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
-        </div>
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_u25cckyh.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+    <div class="user_input">
+        <textarea rows="4" cols="50" placeholder="Ask us if you have any..."></textarea>
+        <button type="button" style="
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    ">Send</button>
+    </div>
+</div>
         <div class="contact_info">
-            <div class="mail">
-                <i class="fa-solid fa-at" style="font-size:24px"></i>
-                <a href="mailto:jesicaabijju7@gmail.com"><h2>jesicaabijju7@gmail.com</h2></a>
-            </div>
-            <div class="phone">
-                <i class="fa-solid fa-address-book" style="font-size:24px"></i>
-                <a href="tel:+918169025493"><h2>8169025493</h2></a>
-            </div>
+            
             <div class="social-header">
                 <ul>
-                    <li><a href="https://github.com/yashviiii"><i class="fa-brands fa-square-github" style="font-size:36px"></i></a></li>
+                    <li><a href="1234567890"><i class="fa-solid fa-address-book" style="font-size:36px"></i></a></li>
+                    <li><a href="abcd@gmail.com"><i class="fa-brands fa-at" style="font-size:36px"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-square-twitter" style="font-size:36px"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-linkedin" style="font-size:36px"></i></a></li>
+
                 </ul>
             </div>
         </div> 
